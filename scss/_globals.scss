@@ -1,0 +1,240 @@
+html {
+}
+body {
+	font-size: 14px;
+	background: #121314 url('/img/bkgd.png') top left repeat fixed;
+	-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;
+}
+
+hr {
+	opacity: .1;
+}
+
+hr.firstrule {
+	margin: 175px 0 0 0;
+}
+
+h1 {
+	margin: 110px 0 25px 0;
+	font-size: 5em;
+	font-family: 'Georgia', serif;
+	font-weight: 100;
+	line-height: 1em;
+	position: relative;
+	color: #fff;
+	text-align: left;
+	span {
+		opacity: .03;
+		font-size: 18px;
+	}
+}
+
+#main {
+	position: relative;
+	top: 0;
+	width: 500px;
+	margin: 0 auto;
+	blockquote {
+		font-family: 'Georgia', serif;
+		font-size: 18px;
+		font-weight: 100;
+		font-style: italic;
+		line-height: 35px;
+		margin: 200px 0;
+		text-align: left;
+		opacity: 1;
+		span {
+			opacity: .05;
+			a {
+				color: #fff;
+			}
+		}
+		&.top {
+			opacity: .75;
+		}
+	}
+	p {
+		font-family: 'Georgia', serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 35px;
+		margin: 200px 0;
+		text-align: left;
+		a {
+			color: #ffffff;
+			text-decoration: none;
+			-webkit-transition: all .25s ease-in;
+			-moz-transition: all .25s ease-in;
+			-o-transition: all .25s ease-in;
+			transition: all .25s ease-in;
+			&:hover {
+				text-decoration: none;
+				color: #000000;
+			}
+		}
+	}
+	p.first {
+		font-family: 'Georgia', serif;
+		font-style: italic;
+		margin: 0 0 115px 0;
+		font-size: 14px;
+		line-height: 28px;
+		opacity: .25;
+	}
+}
+
+.section {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#bodycontent {
+	margin: 15px 0 10px 0;
+	width: 100%;
+	p {
+		margin: 0;
+		font-size: 10px;
+		color: #202121;
+	}
+}
+
+
+ul#links {
+	list-style: none;
+	overflow: auto;
+	margin: 40px 0 45px 0;
+	padding: 0;
+	li {
+		float: left;
+		margin: 15px 0 15px 38px;
+		a {
+			font-family: 'Helvetica', sans-serif;
+			display: block;
+			padding: 5px 15px;
+			border: 2px solid #ffffff;
+			color: #ffffff;
+			background: none;
+			text-decoration: none;
+			opacity: .25;
+			border-radius: 5px;
+			-webkit-transition: all .25s ease-in;
+			-moz-transition: all .25s ease-in;
+			-o-transition: all .25s ease-in;
+			transition: all .25s ease-in;
+			&:hover {
+				opacity: 1;
+				color: #141515;
+				background: #ffffff;
+			}
+		}
+		a.blog {
+			&:hover {
+				border: 2px solid #A0A1A1;
+				background: #A0A1A1;
+				color: #ffffff;
+			}
+		}
+		a.soundcloud {
+			&:hover {
+				border: 2px solid #A04D08;
+				background: #A04D08;
+				color: #ffffff;
+			}
+		}
+		a.linkedin {
+			&:hover {
+				border: 2px solid #1B5979;
+				background: #1B5979;
+				color: #ffffff;
+			}
+		}
+		a.tumblr {
+			&:hover {
+				border: 2px solid #213242;
+				background: #213242;
+				color: #ffffff;
+			}
+		}
+		a.twitter {
+			&:hover {
+				border: 2px solid #3A6F97;
+				background: #3A6F97;
+				color: #ffffff;
+			}
+		}
+		a.lastfm {
+			&:hover {
+				border: 2px solid #731B1D;
+				background: #731B1D;
+				color: #ffffff;
+			}
+		}
+		a.vsco {
+			&:hover {
+				border: 2px solid #A8A749;
+				background: #A8A749;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+.rss-box-instagram {
+	@include outer-container;
+	margin: 55px 0 40px 0;
+		img {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			z-index: 5;
+		}
+		a {
+			color: transparent;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 117px;
+			height: 116px;
+			z-index: 10;
+			background: #000000;
+			opacity: .70;
+			-webkit-transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			transition: all .5s ease;
+			&:hover {
+				opacity: 0;
+			}
+		}
+		br {
+			display: none;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+			li {
+				@include span-columns(3);
+				@include omega(4n);
+				margin-bottom: 20px;
+				position: relative;
+				/*
+					@include media($tablet) {
+	    			@include span-columns(12);
+	    			@include omega(2n);
+	    			margin-bottom: 10px;
+	    		}
+					@include media($mobile) {
+	    			@include span-columns(12);
+	    			margin-bottom: 10px;
+	    		}
+	    		*/
+			}
+			li:nth-last-child(-n+4) {
+				display: none;
+			}
+		}
+}

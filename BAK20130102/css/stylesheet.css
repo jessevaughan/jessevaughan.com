@@ -1,0 +1,414 @@
+/* 
+	12 COLUMN - RESPONSIVE GRID SYSTEM
+	DEVELOPED BY DENIS LEBLANC
+	URL - http://responsive.gs
+	LICENSED UNDER GPL & MIT
+*/
+
+/* MAIN CONTAINER */
+.container						{ margin: 0 auto; }
+
+/* SELF CLEARING FLOATS - CLEARFIX METHOD
+----------------------------------------------------------------------------------------------------*/
+.row:after,
+.clr:after,
+.group:after	 				{ content: ""; 
+								  display: block; 
+								  height: 0; 
+								  clear: both; 
+  								  visibility: hidden; }
+
+/* DEFAULT ROW STYLES */
+.row							{ margin-bottom: 20px; } /* set according to preference*/
+								  
+/* DEFAULT COLUMN STYLES */
+.col 							{ display: block;
+								  float:left;
+								  margin-left: 2%; }
+
+/* RESET MARGINS */
+.col:first-child 				{ margin-left: 0; } /* all browsers except IE6 and lower */
+
+/* COLUMN WIDTHS*/
+.span_1 						{ width: 6.5%; }
+.span_2 						{ width: 15.0%; }
+.span_3 						{ width: 23.5%; }
+.span_4 						{ width: 32.0%; }
+.span_5 						{ width: 40.5%; }
+.span_6 						{ width: 49.0%; }
+.span_7 						{ width: 57.5%; }
+.span_8 						{ width: 66.0%; }
+.span_9 						{ width: 74.5%; }
+.span_10 						{ width: 83.0%; }
+.span_11 						{ width: 91.5%; }
+.span_12 						{ width: 100%; }
+
+
+
+/* CUSTOM STYLES */
+
+
+body.main {
+	background: #f0efe6 url(/images/bkgd-body.jpg) center top repeat;
+}
+
+H1 {
+	font-family: 'Abel', sans-serif;
+	font-size: 60px;
+	font-weight: normal;
+	margin: 0;
+	color: #f0efe6;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	padding: 0;
+}
+
+H2 {
+	font-family: 'Abel', sans-serif;
+	font-size: 26px;
+	font-weight: normal;
+	margin: 0;
+	color: #f0efe6;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	padding: 0;
+	line-height: 40px;
+	text-shadow: 1px 1px 1px #aba898;
+	filter: dropshadow(color=#aba898, offx=1, offy=1);
+}
+
+.container hr {
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+	border: none;
+    background-color: #b3ae9f;
+    color: #b3ae9f;
+    height: 1px;
+}
+
+li.group h3, #aboutDescription h3 {
+	font-family: 'Abel', sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	margin: 0 0 20px 0;
+	color: #253239;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	padding: 0;
+	line-height: 40px;
+	text-shadow: 1px 1px 1px #aba898;
+	filter: dropshadow(color=#aba898, offx=1, offy=1);
+}
+
+header.top {
+	background: url(/images/bkgd-header.jpg) center top repeat;
+	width: 100%;
+	height: 181px;
+	padding: 84px 0 0 0;
+	position: relative;
+	z-index: 1;
+	border-bottom: 1px solid #B3AE9F;
+}
+
+ol.projects li {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 100px 0 60px 0;
+	list-style: none;
+	text-align: right;
+	}
+ol.projects li:last-child {
+	border-bottom: none;
+	}
+ol.projects li h3 {
+	font-size: 21px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	color: #475455;
+	margin: 0 auto 15px auto;
+	line-height: 28px;
+	text-align: left;
+	}
+ol.projects hr {
+	margin: 0 auto;
+	width: 75%;
+	border: none;
+    background-color: #b3ae9f;
+    color: #b3ae9f;
+    height: 1px;
+}
+ol.projects li a img {
+	float: left;
+	margin: 0 0 0 0;
+	padding: 0;
+	border: 2px solid #b3ae9f;
+	width: 68%;
+	opacity: 0.5;
+	}
+ol.projects li a:hover img {
+	border: 2px solid #b3ae9f;
+	}
+ol.projects li a:active img {
+	border: 2px solid #b3ae9f;
+	top: 0;
+}
+ol.projects li p {
+	font-family: 'Abel', sans-serif;
+	margin: 7px auto 0 auto;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #f0efe6;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: right;
+	text-shadow: 1px 1px 1px #ABA898;
+	filter: dropshadow(color=#aba898, offx=1, offy=1);
+	}
+ol.projects li p.details {
+	font-size: 12px;
+	}
+ol.projects li p.attn {
+	font-size: 10px;
+	color: #b3ae9f;
+	}
+ol.projects li p span {
+	margin: 5px auto 0 auto;
+	font-size: 12px;
+	color: #b3ae9f;
+	}
+ol.projects li p span.meta {
+	display: block;
+	font-size: 12px;
+	color: #999;
+	}
+a.viewSite:link, a.viewSite:visited {
+	background: #475455;
+	padding: 5px 15px;
+	border: none;
+	margin-top: 15px;
+	color: #F0EFE6;
+	text-transform: uppercase;
+	font-size: 21px;
+	font-family: 'Abel', sans-serif;
+	float: right;
+	position: relative;
+	top: 0;
+	text-shadow: 1px 1px 1px #ABA898;
+	filter: dropshadow(color=#aba898, offx=1, offy=1);
+}
+
+a.viewSite:hover {
+	background: #232e32;
+	border: none;
+}
+a.viewSite:active {
+	background: #232e32;
+	top: 1px;
+	border: none;
+}
+
+.about {
+	margin: 0 auto;
+	padding: 70px 0;
+	position: relative;
+	background: url(/images/jesse-vaughan-bio.png) right top no-repeat;
+}
+
+#aboutDescription {
+	width: 68%;
+	float: left;
+	color: #475455;
+	font-family: 'Abel', sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	position: relative;
+	z-index: 7;
+}
+
+#aboutDescription a:link, #aboutDescription a:visited {
+	color: #253239;
+}
+
+#aboutDescription a:hover, #aboutDescription a:active {
+	color: #f0efe6;
+}
+
+#aboutLinks {
+	width: 10%;
+	padding-right: 15%;
+	float: right;
+	text-align: right;
+	position: relative;
+	z-index: 8;
+	border-left: 1px dotted #475455;
+	padding-left: 3%
+}
+
+#aboutLinks a:link, #aboutLinks a:visited {
+	float: left;
+	font-family: 'Abel', sans-serif;
+	font-size: 24px;
+	color: #475455;
+	display: block;
+	position: relative;
+	top: 0;
+	width: 100%;
+	margin: 0 0 5px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #aba898;
+	filter: dropshadow(color=#aba898, offx=1, offy=1);
+}
+
+#aboutLinks a:hover {
+	top: -1px;
+	color: #f0efe6;
+}
+
+#aboutLinks a:active {
+	top: 0px;
+}
+
+
+/* 
+	MEDIA QUERIES FOR COMMON DEVICES- RESPONSIVE GRID SYSTEM
+	URL - http://responsive.gs
+	LICENSE - PUBLIC DOMAIN
+*/
+
+/* SMARTPHONES - PORTRAIT & LANDSCAPE */
+@media
+only screen and (min-device-width: 320px) and (max-device-width: 480px),
+only screen and (min-width: 320px) and (max-width: 480px) {
+	
+	.container						{ width: 95%; } /* edit how you see fit */
+	
+	/* INSERT YOUR STYLES */
+}
+
+/* SMARTPHONES - LANDSCAPE */
+@media 
+only screen and (min-width: 321px) {
+	
+	.container						{ width: 95%; } /* edit how you see fit */
+	
+	/* INSERT YOUR STYLES */
+	
+}
+
+/* SMARTPHONES - PORTRAIT */
+@media
+only screen and (min-device-width: 240px) and (max-device-width: 480px),
+only screen and (min-width: 240px) and (max-width: 480px) {
+	
+	.container						{ width: 90%; } /* edit how you see fit */
+	
+	.about h3 {
+		font-size: 26px;
+	}
+	
+	#aboutLinks {
+		line-height: 70px;
+	}
+	
+	.footer {
+		display: none;
+	}
+
+	ol.projects li a img {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+		}		
+	ol.projects li {
+		text-align: center;
+		padding:  60px 0;
+		}
+		
+	ol.projects li p {
+		margin: 10px 0 0 0;
+		text-align: center;
+	}
+	
+	a.viewSite:link, a.viewSite:visited {
+		float: none;
+		margin: 10px auto 0 auto;
+	}
+
+	
+	/* INSERT YOUR STYLES */
+	
+}
+
+/* IPADS - PORTRAIT & LANDSCAPE */
+@media 
+only screen and (min-device-width: 768px) and (max-device-width: 1024px),
+only screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	.container						{ width: 95%; } /* edit how you see fit */
+	
+	/* INSERT YOUR STYLES */
+	
+}
+
+/* IPADS - LANDSCAPE */
+@media 
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	
+	.container						{ width: 95%; } /* edit how you see fit */
+	
+	/* INSERT YOUR STYLES */
+	
+}
+
+/* IPADS - PORTRAIT */
+@media 
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	
+	.container						{ width: 95%; } /* edit how you see fit */
+	
+	/* INSERT YOUR STYLES */
+	
+}
+
+
+/* DESKTOPS & LAPTOPS */
+@media 
+only screen and (min-width: 1024px) {
+	
+	.container						{ max-width: 1000px; }
+	
+	/* INSERT YOUR STYLES */
+	
+}
+
+@media 
+only screen and (min-width: 1224px) {
+	
+	.container						{ max-width: 1000px; }
+	
+	/* INSERT YOUR STYLES */
+	
+}
+
+/* LARGE SCREENS */
+@media 
+only screen and (min-width : 1824px) {
+	
+	.container						{ max-width: 1800px; }
+	
+	/* INSERT YOUR STYLES */
+	
+}
+
+/* RETINA DISPLAY */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+	
+	/* INSERT YOUR STYLES */
+	
+}	

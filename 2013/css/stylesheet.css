@@ -1,0 +1,791 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio,
+b, big, blockquote, body, caption, canvas, center, cite, code,
+dd, del, details, dfn, dialog, div, dl, dt, em, embed,
+fieldset, figcaption, figure, form, footer,
+header, hgroup, h1, h2, h3, h4, h5, h6, html,
+i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav,
+object, ol, output, p, pre, q, ruby,
+s, samp, section, small, span, strike, strong, sub, summary, sup,
+tt, table, tbody, textarea, tfoot, thead, time, tr, th, td,
+u, ul, var, video {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  white-space: normal;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent; }
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: url(/images/bkgd-body.jpg) center top repeat;
+	font-size: 100%;
+}
+
+p {
+	
+}
+
+h1 {
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	font-family: "Times New Roman", Times;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 auto 86px auto;
+	padding: 86px 0 0 0;
+	width: 7%;
+	border-bottom: 1px solid white;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 700;
+	font-family: 'Karla', sans-serif;
+	color: white;
+	margin: 10px 0 10px 5px;
+	float: left;
+}
+
+#header {
+	width: 100%;
+	padding: 0 0 38px 0;
+	background: url(/images/bkgd-header.gif) center top repeat;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	-webkit-box-shadow: 0px 0px 10px 0px #5e5e5e;
+	box-shadow: 0px 0px 10px 0px #5e5e5e;
+}
+
+#header span {
+	display: none;
+}
+
+#jessev {
+	width: 210px;
+	margin: 0 auto;
+	top: 10px;
+	position: relative;
+}
+
+#jessev a:link, #jessev a:visited {
+	/* float: left;
+	font-family: "Times New Roman", Times;
+	font-style: italic;
+	font-size: 28px;
+	color: #343e40;
+	margin: 30px 0 0 30px;
+	text-shadow: -1px 1px 2px #ffffff;
+    filter: dropshadow(color=#ffffff, offx=-1, offy=1);
+    text-decoration: none;
+    */
+}
+
+.logo {
+	display: block;
+	width: 210px;
+	height: 151px;
+	background: url(/images/header-jesse.png) center bottom no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+
+.overlay {
+	display: none;
+	width: 210px;
+	height: 151px;
+	background: url(/images/header-jesse.png) center top no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#navigation ul {
+	list-style: none;
+	margin: 40px auto;
+	position: relative;
+	z-index: 10000;
+	width: 100%;
+}
+
+#navigation li {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 25%;
+	text-align: center;
+}
+
+#navigation li.one {
+}
+
+#navigation li.two {
+	width: 10%;
+	margin: 0 15% 0 0;
+}
+
+#navigation li.three {
+	width: 10%;
+	margin: 0 0 0 15%;
+}
+
+#navigation li.four {	
+}
+
+#navigation a:link, #navigation a:visited {
+	font-size: 18px;
+	color: #343e40;
+	text-transform: uppercase;
+	font-family: 'Karla', sans-serif;
+	text-decoration: none;
+	letter-spacing: 7px;
+}
+
+#navigation a:hover, #navigation a:active {
+	text-decoration: underline;
+}
+
+#masthead {
+	background: url(/images/masthead-baltimore-02.jpg) 50% 0 no-repeat fixed;
+	min-height: 700px;
+	position: relative;
+}
+
+#masthead article {
+	display: block;
+}
+
+#masthead b {
+	font-family: "Times New Roman", Times;
+	font-style: italic;
+	font-size: 28px;
+	color: #ffffff;
+	margin: 30px 0 0 30px;
+	text-shadow: -1px 1px 2px #296751;
+	filter: dropshadow(color=#296751, offx=-1, offy=1);
+    text-decoration: none;
+	text-transform: none;
+	letter-spacing: 2px;
+	margin: 0 auto 20px auto;
+	display: block;
+	text-align: center;
+	font-weight: normal;
+}
+
+#masthead h1 {
+	font-size: 62px;
+	text-align: center;
+	color: white;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 auto 0px auto;
+	padding: 220px 0 0 0;
+	width: 100%;
+	letter-spacing: 6px;
+	border: none;
+	line-height: 75px;
+	text-shadow: -1px 1px 2px #296751;
+	filter: dropshadow(color=#296751, offx=-1, offy=1);
+}
+
+#masthead h1 a {
+	font-family: "Times New Roman", Times;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 28px;
+}
+
+#masthead h1 span {
+	font-weight: 400;
+	font-style: italic;
+	border-bottom: 1px solid #ffffff;
+}
+
+#mainText {
+	position: relative;
+}
+
+#content {
+	background: none;
+	min-height: 1000px;
+	background: url(/images/bkgd-work.gif) center top repeat;
+	position: relative;
+	z-index: 900;
+}
+
+p.decoration {
+	margin: 25px auto;
+	text-align: center;
+}
+
+#about {
+	width: 100%;
+	padding: 0 0 100px 0;
+	background: url(/images/bkgd-about.gif) center top repeat;
+	-webkit-box-shadow: 0px 0px 10px 0px #5e5e5e;
+	box-shadow: 0px 0px 10px 0px #5e5e5e;
+	text-align: left;
+}
+
+#about p {
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	width: 645px;
+	color: #ffffff;	
+	margin: 0 auto;
+	line-height: 36px;
+}
+
+#about p.subtext {
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+	width: 645px;
+	color: #ffffff;	
+	line-height: 32px;
+	font-size: 12px;
+	margin: 50px auto;
+	text-align: center;
+}
+
+#about a:link, #about a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#about a:hover, #about a:active {
+	text-decoration: underline;
+}
+
+#work {
+	width: 100%;
+	padding: 0 0 100px 0;
+}
+
+p.text{
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Karla', sans-serif;
+	color: white;
+	float: left;
+	clear: left;
+	margin: 0 0 0 5px;
+}
+
+.workBoxLeft {
+	width: 41%;
+	margin: 10px 3% 80px 6%;
+	display: block;
+	float: left;
+}
+
+.workBoxRight {
+	width: 41%;
+	margin: 10px 6% 80px 3%;
+	display: block;
+	float: left;
+}
+
+.workBoxLeft img, .workBoxRight img {
+	width: 100%;
+	background: #dacbac;
+	float: left;
+	border: 4px solid #ffffff;
+	opacity: 0.5;
+}
+
+#footer {
+	width: 100%;
+	padding: 0 0 100px 0;
+	background: url(/images/bkgd-about.gif) center top repeat;
+	-webkit-box-shadow: 0px 0px 10px 0px #5e5e5e;
+	box-shadow: 0px 0px 10px 0px #5e5e5e;
+}
+
+#copyright {
+	padding: 0px 0 0 0;
+	width: 100%;
+	display: block;
+}
+
+#photos {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.rss-box-instagram {
+	width: 1000px;
+	margin: 0 auto 25px auto;
+}
+
+.rss-box-instagram img { width: 222px; height:222px; border: 4px solid #ffffff; opacity: 0.5; }
+.rss-box-instagram a { display: none;}
+
+.rss-box-instagram ul { list-style-type: none; }
+
+.rss-box-instagram ul {
+list-style-type: none;
+}
+
+.rss-box-instagram ul {
+	width: 100%;
+}
+
+.rss-box-instagram li {
+	display: block;
+	float: left;
+	padding: 0px 10px 50px 10px;
+}
+
+#bottom {
+	width: 100%;
+	padding: 0 0 75px 0;
+	-webkit-box-shadow: 0px 0px 10px 0px #5e5e5e;
+	box-shadow: 0px 0px 10px 0px #5e5e5e;
+	background: url(/images/bkgd-contact.jpg) 50% 0 no-repeat fixed;
+}
+
+#contact {
+	padding: 0 0 150px 0;
+}
+
+#contact p {
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	width: 100%;
+	color: white;
+	margin: 0 auto;
+	line-height: 36px;
+	text-align: center;
+}
+
+#contact a:link, #contact a:visited {
+	text-transform: uppercase;
+	font-size: 24px;
+	text-decoration: none;
+	color: #ffffff;
+	letter-spacing: 7px;
+	margin: 15px auto;
+}
+
+#contact a:hover, #contact a:active {
+	text-decoration: underline;
+}
+
+.contact-icons {
+	width: 425px;
+	margin: 25px auto;
+	list-style: none;
+}
+
+.contact-icons li {
+	float: left;
+	padding: 5px;
+}
+
+.contact-icons img {
+	opacity: 0.5;
+}
+
+#copyright p {
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Karla', sans-serif;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	padding: 0 0 0 7px;	
+}
+
+#below {
+	width: 100%;
+	padding: 50px 0 500px 0;
+	background: url(/images/bkgd-header.gif) center top repeat;
+	-webkit-box-shadow: 0px 0px 10px 0px #5e5e5e;
+	box-shadow: 0px 0px 10px 0px #5e5e5e;
+}
+
+.clear {
+	clear: both;
+}
+
+/* SMARTPHONES - PORTRAIT */
+@media
+only screen and (min-device-width: 240px) and (max-device-width: 480px),
+only screen and (min-width: 240px) and (max-width: 480px) {
+
+h1 {
+	width: 25%;
+	padding: 56px 0 0 0;
+	margin: 0 auto 56px auto;
+}
+
+#header {
+	width: 100%;
+	padding: 0 0 38px 0;
+	background: url(/images/bkgd-header.gif) center top repeat;
+	position: relative;
+	top: 0;
+	z-index: 1000;
+	-webkit-box-shadow: 0px 0px 10px 0px #347960;
+	box-shadow: 0px 0px 10px 0px #347960;
+	float: left;
+	margin: 0 0 25px 0;
+}
+
+#header span {
+	display: block;
+	font-family: "Times New Roman", Times;
+	font-style: italic;
+	font-size: 28px;
+	color: #343E40;
+	margin: 30px auto;
+	text-shadow: -1px 1px 2px white;
+	filter: dropshadow(color=#ffffff, offx=-1, offy=1);
+	text-decoration: none;
+	text-align: center;
+}
+
+#jessev a:link, #jessev a:visited {
+	display: none;
+}
+
+.logo {
+	display: none;
+}
+
+#navigation ul {
+	list-style: none;
+	margin: 0 auto;
+	width: 100%;
+	float: none;
+}
+
+#navigation li, #navigation li.one, #navigation li.two, #navigation li.three, #navigation li.four {
+	display: block;
+	padding: 10px 0px;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+#navigation a:link, #navigation a:visited {
+	font-size: 18px;
+	color: #343e40;
+	text-transform: uppercase;
+	font-family: 'Karla', sans-serif;
+	text-decoration: none;
+	letter-spacing: 7px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#navigation a:hover, #navigation a:active {
+	text-decoration: underline;
+}
+
+#masthead {
+	position: static;
+}
+
+#mainText {
+	position: static;
+}
+
+#masthead b {
+	display: none;
+}
+
+#masthead {
+	background: none;
+	min-height: 415px;
+}
+
+#masthead article {
+	display: block;
+}
+
+#masthead h1 {
+	font-size: 18px;
+	text-align: center;
+	color: white;
+	font-family: 'Karla', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 auto 35px auto;
+	padding: 61px 0 0 0;
+	width: 100%;
+	letter-spacing: 6px;
+	border: none;
+	line-height: 34px;
+	text-shadow: -1px 1px 2px #296751;
+	filter: dropshadow(color=#296751, offx=-1, offy=1);
+}
+
+#masthead h1 a {
+	font-weight: 400;
+	font-style: italic;
+	font-size: 14px;
+}
+
+#masthead h1 span {
+	font-weight: 400;
+	font-style: italic;
+	border-bottom: 1px solid #ffffff;
+}
+
+#about {
+	padding: 0 0 50px 0;
+}
+
+#about p {
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	width: 90%;
+	color: white;
+	margin: 0 auto;
+	line-height: 24px;
+}
+
+#about p.subtext {
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+	width: 100%;
+	color: white;
+	line-height: 32px;
+	font-size: 12px;
+	margin: 50px auto 35px auto;
+	text-align: center;
+}
+
+#work {
+	padding: 0 0 50px 0;
+}
+
+.workBoxLeft {
+	width: 88%;
+	margin: 10px 5% 50px 5%;
+	display: block;
+	float: left;
+}
+
+.workBoxRight {
+	width: 88%;
+	margin: 10px 5% 50px 5%;
+	display: block;
+	float: left;
+}
+
+.workBoxLeft img, .workBoxRight img {
+	opacity: 1;
+}
+
+#footer {
+width: 100%;
+padding: 0 0 50px 0;
+background: url(/images/bkgd-about.gif) center top repeat;
+-webkit-box-shadow: 0px 0px 10px 0px #5E5E5E;
+box-shadow: 0px 0px 10px 0px #5E5E5E;
+}
+
+#photos {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.rss-box-instagram {
+	width: 100%;
+	margin: 0 auto 25px auto;
+}
+
+.rss-box-instagram img { width: 75%; height:75%; border: 2px solid #ffffff; opacity: 1; }
+.rss-box-instagram a { display: none;}
+
+.rss-box-instagram ul { list-style-type: none; }
+
+.rss-box-instagram ul {
+list-style-type: none;
+}
+
+.rss-box-instagram ul {
+	width: 100%;
+}
+
+.rss-box-instagram li {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 0 25px 0;
+}
+
+.rss-item div {
+	text-align: center;
+}
+
+#contact p {
+	font-family: 'Karla', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	width: 100%;
+	color: white;
+	margin: 0 auto;
+	line-height: 36px;
+	text-align: center;
+}
+
+#contact a:link, #contact a:visited {
+	text-transform: uppercase;
+	font-size: 18px;
+	text-decoration: none;
+	color: #ffffff;
+	letter-spacing: 0px;
+	margin: 15px auto;
+}
+
+#contact a:hover, #contact a:active {
+	text-decoration: underline;
+}
+
+#below {
+	padding: 50px 0;
+}
+
+#contact {
+padding: 0 0 100px 0;
+}
+
+.contact-icons {
+	width: 300px;
+	margin: 25px auto 0 auto;
+	list-style: none;
+}
+
+.contact-icons li {
+	float: left;
+	padding: 5px;
+}
+
+.contact-icons img {
+	opacity: 1.0;
+	width: 50px;
+}
+
+#bottom {
+	background: none;
+	padding: 0 0 50px 0;
+}
+
+}
+
+/* LARGE SCREENS */
+@media 
+only screen and (min-width : 1280px) {
+
+#about p {
+font-family: 'Karla', sans-serif;
+font-weight: 400;
+font-size: 18px;
+width: 1000px;
+color: white;
+margin: 0 auto;
+line-height: 36px;
+}
+
+#photos {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.rss-box-instagram {
+	width: 1200px;
+	margin: 0 auto 25px auto;
+}
+
+.rss-box-instagram img { width: 242px; height:242px; border: 4px solid #ffffff; }
+.rss-box-instagram a { display: none;}
+
+.rss-box-instagram ul { list-style-type: none; }
+
+.rss-box-instagram ul {
+list-style-type: none;
+}
+
+.rss-box-instagram ul {
+	width: 100%;
+}
+
+.rss-box-instagram li {
+	display: block;
+	float: left;
+	padding: 0px 25px 50px 25px;
+}
+
+}
+
+/* LARGE SCREENS */
+@media 
+only screen and (min-width : 1620px) {
+	
+#about p {
+font-family: 'Karla', sans-serif;
+font-weight: 400;
+font-size: 18px;
+width: 1000px;
+color: white;
+margin: 0 auto;
+line-height: 36px;
+}
+
+#photos {
+	width: 1500px;
+	margin: 0 auto;
+}
+
+.rss-box-instagram {
+	width: 1500px;
+	margin: 0 auto 25px auto;
+}
+
+.rss-box-instagram img { width: 316px; height:316px; border: 4px solid #ffffff; }
+.rss-box-instagram a { display: none;}
+
+.rss-box-instagram ul { list-style-type: none; }
+
+.rss-box-instagram ul {
+list-style-type: none;
+}
+
+.rss-box-instagram ul {
+	width: 100%;
+}
+
+.rss-box-instagram li {
+	display: block;
+	float: left;
+	padding: 0px 25px 50px 25px;
+}
+
+}
