@@ -240,3 +240,20 @@ ul#links {
 			}
 		}
 }
+
+.panel-one {
+  #kevin {
+    width: 100%;
+    padding: 100px 100px 25px 100px;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: #f4ff01;
+      text-decoration: underline;
+    }
+  }
+}
