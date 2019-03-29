@@ -26,7 +26,7 @@
   .panel-one {
     padding-bottom: 50px;
   }
-  .panel-one #kevin {
+  #banner-load img {
     width: 100%;
     padding: 50px 50px 25px 50px;
     max-width: 1000px;
@@ -51,6 +51,20 @@
     color: white;
     opacity: .5;
   }
+  .fade-in{
+    -webkit-animation: fade-in 1s ease;
+    -moz-animation: fade-in ease-in-out 1s both;
+    -ms-animation: fade-in ease-in-out 1s both;
+    -o-animation: fade-in ease-in-out 1s both;
+    animation: fade-in 1s ease;
+    visibility: visible;
+    -webkit-backface-visibility: hidden;
+  }
+
+  @-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+  @-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+  @-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+  @keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
   </style>
 
 </head>
@@ -59,7 +73,7 @@
 
   <div style="width: 100%;text-align: center;">
   
-  <img src="/kevin.jpg" id="kevin">
+  <div id="banner-load"></div>
 
   <section style="color: white; padding: 0 50px;">
   <p>Jesse Vaughan is the Head of Brand and Design at <a href="https://www.adroll.com" target="_blank">AdRoll</a>, living and working in San Francisco.</p>
@@ -73,60 +87,18 @@
   
   </div>
 
-  <!--
+  	<script>
+  	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<div id="wrap"></div>
+  	  ga('create', 'UA-48638817-2', 'jessevaughan.com');
+  	  ga('send', 'pageview');
 
-	<div id="main">
+  	</script>
 
-		<section id="top" class="section text">
-
-			<hr class="firstrule">
-
-			<h1 style="text-align:center;">Jesse <br>Vaughan</h1>
-
-      <p class="first" style="text-align: center; margin: 15px 0 125px;">I make websites and design things and write lots of html and css and js and live in san francisco and spend too much time on the internet and run and stuff and things.</p>
-
-      <hr>
-
-      <section style="text-align: center;">
-        <img src="/img/mah-website.gif">
-      </section>
-
-      <hr>
-
-		</section>
-		
-		
-		<div id="bodycontent">
-			<ul id="links">
-				<li><a target="_blank" class="linkedin" href="http://www.linkedin.com/in/jessesvaughan/">LinkedIn</a></li>
-				<li><a target="_blank" class="tumblr" href="https://www.instagram.com/twoseconds/">Instagram</a></li>
-				<li><a target="_blank" class="twitter" href="https://twitter.com/jessevaughan_">Twitter</a></li>
-				<li><a target="_blank" class="soundcloud" href="https://soundcloud.com/soundfrown">Soundcloud</a></li>
-			</ul>
-
-			<hr>
-
-			<p>&copy;2016 Jesse Vaughan</p>
-		</div>
-
-	</div>
-
--->
-
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-48638817-2', 'jessevaughan.com');
-	  ga('send', 'pageview');
-
-	</script>
-
-	<script>
+	 <script>
 		document.write('<script src=js/vendor/' +
   		('__proto__' in {} ? 'zepto' : 'jquery') +
   		'.js><\/script>')
@@ -135,9 +107,12 @@
   	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   	<script src="js/scripts.js"></script>
   	<script src="js/vendor/modernizr.js"></script>
-  	<script>
-    	$('body').colorScroll();
-  	</script>
+
+    <!--New images on load -->
+    <script>
+      var images = ['kevin.jpg', 'kash.jpg'];
+      $('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
+    </script>
 
 </body>
 </html>
