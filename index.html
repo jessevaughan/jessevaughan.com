@@ -27,9 +27,8 @@
     padding-bottom: 50px;
   }
   #banner-load img {
-    width: 100%;
+    max-width: 400px;
     padding: 50px 50px 25px 50px;
-    max-width: 1000px;
     margin: 0 auto;
   }
   .panel-one a {
@@ -73,7 +72,7 @@
 
   <div style="width: 100%;text-align: center;">
   
-  <div id="banner-load"></div>
+  <div id="banner-load"><img src="me.jpg"></div>
 
   <section style="color: white; padding: 0 50px;">
   <p>Jesse Vaughan is the Head of Brand and Design at <a href="https://www.adroll.com" target="_blank">AdRoll</a>, living and working in San Francisco.</p>
@@ -110,7 +109,7 @@
 
     <!--New images on load -->
     <script>
-      var images = ['kevin.jpg', 'kash.jpg'];
+      var images = ['me.jpg'];
       $('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
     </script>
 
